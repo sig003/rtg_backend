@@ -108,6 +108,8 @@
 
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
-    "skipLibCheck": true /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+    "outDir": "dist", // ✅ 빌드 결과를 dist 폴더에
+    "rootDir": "src" // ✅ 소스는 src 폴더 기준
   }
 }
