@@ -2,6 +2,8 @@ import express from 'express';
 import { PrismaClient } from '@prisma/client';
 import cors from 'cors';
 
+const PORT = process.env.PORT || 3001;
+
 const app = express();
 const prisma = new PrismaClient();
 
@@ -134,6 +136,6 @@ app.delete('/api/books/:id', async (req, res) => {
   }
 });
 
-app.listen(3001, () => {
-  console.log('Ready to Server');
+app.listen(PORT, () => {
+  console.log(`Ready to Server on port ${PORT}`);
 });
